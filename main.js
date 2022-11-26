@@ -68,7 +68,7 @@ function addCard(parent,data)
 
 function getTimeOfDay(hour)
 {
-    if(hour < 6 && hour >3)
+    if(hour <= 6 && hour >3)
         return "morning";
     else if(hour < 13 && hour > 6)
         return "noon";
