@@ -30,6 +30,7 @@ body
     min-height: 100vh;
     flex-direction: column;
     gap: 10px;
+    flex-wrap: wrap;
 }
 .location
 {
@@ -48,7 +49,7 @@ body
 }
 .offscreen
 {
-    left: -100vw;
+    left: -3000px;
 }
 .weather-data .name
 {
@@ -72,7 +73,7 @@ body
 .forecast
 {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(8,1fr);
     gap: 10px;
     padding: 20px;
     overflow: hidden;
