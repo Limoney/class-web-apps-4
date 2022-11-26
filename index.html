@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam&display=swap" rel="stylesheet">
+    <title>Lab4</title>
+</head>
+<body>
+    <div class="page-container">
+        <div class="location">
+            <label for="location-input">type location</label>
+            <input type="text" id="location-input">
+        </div>
+        <div class="current" id="current">
+            
+        </div>
+        <div class="forecast" id ="forecast">
+            
+        </div>
+        <template id="weather-data-template">
+            <div class="weather-data offscreen">
+                <div class="name">
+                    
+                </div>
+                <div class="properties">
+                    <div class="description">
+                        <div class="prop-name">
+                            description
+                        </div>
+                        <div class="prop-value">
+                            
+                        </div>
+                    </div>
+                    <div class="temperature">
+                        <div class="prop-name">
+                            temperature
+                        </div>
+                        <div class="prop-value">
+                            
+                        </div>
+                    </div>
+                    <div class="humidity">
+                        <div class="prop-name">
+                            humidity
+                        </div>
+                        <div class="prop-value">
+                            
+                        </div>
+                    </div>
+                    <div class="pressure">
+                        <div class="prop-name">
+                            pressure
+                        </div>
+                        <div class="prop-value">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </div>
+</body>
+</html>

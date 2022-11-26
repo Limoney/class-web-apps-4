@@ -1,0 +1,158 @@
+:root
+{
+    --primary: #1abc9c;
+    --primary-dark: #16a085;
+    --secondary: #34495e;
+    --secondary-dark: #2c3e50;
+    --error: #e74c3c;
+    --font: #ecf0f1;
+
+    --morning: #6696ba;
+    --noon: #e2e38b;
+    --afternoon: #e7a553;
+    --evening :#7e4b68;
+    --night: #292965;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    color: var(--font);
+    background-color: var(--secondary-dark);
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 0.92em;
+}
+.page-container
+{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 10px;
+}
+.location
+{
+    margin-top: 10px;
+    width: 400px;
+}
+.weather-data
+{
+    background-color: var(--secondary);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 1px #2c3946;
+    position: relative;
+    transition: 0.3s cubic-bezier(.77,0,.18,1) all;
+    left: 0;
+    
+}
+.offscreen
+{
+    left: -100vw;
+}
+.weather-data .name
+{
+    background-color: var(--primary);
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px;
+}
+.weather-data .properties
+{
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    padding: 10px;
+}
+.weather-data > div
+{
+    padding: 5px;
+    position: relative;
+}
+.forecast
+{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+    padding: 20px;
+    overflow: hidden;
+}
+.prop-name
+{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.button
+{
+    padding: 5px;
+    background-color: var(--primary-dark);
+    border-radius: 5px;
+    min-width: 100px;
+    text-align: center;
+    user-select: none;
+    flex-grow: 0;
+}
+.button:hover
+{
+    cursor: pointer;
+    background-color: var(--primary);
+}
+.is-active
+{
+    border-bottom: 2px solid var(--primary-dark);
+}
+.is-hidden
+{
+    opacity: 0;
+    max-height:0 !important;
+    overflow: hidden;
+}
+.is-excluded
+{
+    display: none;
+}
+input
+{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 5px solid var(--primary-dark);
+    box-sizing: border-box;
+    padding: 5px;
+    color: var(--font);
+}
+input:focus
+{
+    outline: none;
+    border-bottom-color: var(--primary);
+}
+.disabled
+{
+    background-color: var(--secondary-dark);
+}
+.disabled:hover
+{
+    background-color: var(--secondary-dark);
+}
+
+.morning
+{
+    background-color: var(--morning) !important;
+}
+.noon
+{
+    background-color: var(--noon) !important;
+    color: black;
+}
+.afternoon
+{
+    background-color: var(--afternoon) !important;
+}
+.evening
+{
+    background-color: var(--evening) !important;
+}
+.night
+{
+    background-color: var(--night) !important;
+}
