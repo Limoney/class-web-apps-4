@@ -1,5 +1,5 @@
 let key = "7ded80d91f2b280ec979100cc8bbba94";
-let currentLinkTemplate = "http://api.openweathermap.org/data/2.5/weather?q=:location&appid=:key&units=metric&lang=en";
+let currentLinkTemplate = "https://api.openweathermap.org/data/2.5/weather?q=:location&appid=:key&units=metric&lang=en";
 let forecastLinkTemplate = "https://api.openweathermap.org/data/2.5/forecast?q=:location&appid=:key&units=metric&lang=en";
 let currentParent = document.getElementById("current");
 let forecastParent = document.getElementById("forecast");
